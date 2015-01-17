@@ -1,0 +1,15 @@
+# Site settings
+title: phonics.io
+description: Learn phonics, and the basics of the English language.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://phonics.io" # the base hostname & protocol for your site
+permalink: "posts/:title"
+categories: [letters]
+email: irmarkbrady@gmail.com
+twitter_username: phonicsio
+
+# Build settings
+markdown: kramdown
+
+sass:
+    style: :compressed

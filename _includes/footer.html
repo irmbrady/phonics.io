@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>{{ site.title }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.twitter_username %}
+          <p><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i> @{{ site.twitter_username }}</a><p>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+  </div>
+</footer>
