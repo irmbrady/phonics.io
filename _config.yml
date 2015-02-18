@@ -5,7 +5,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://phonics.io" # the base hostname & protocol for your site
 permalink: "posts/:title"
 categories: [letters]
-twitter_username: phonicsio
 
 # Build settings
 markdown: kramdown

@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
-
-<div class="row">
-  <div class="col-md-9 col-md-push-3">
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-    <article>
-      {{ content }}
-    </article>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 col-md-push-3">
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      <article>
+        {{ content }}
+      </article>
+    </div>
+    <div class="col-md-3 col-md-pull-9">
+      <ul class="nav nav-pills nav-stacked">
+        {% for page in site.pages %}
+          {% if page.title and page.categories contains 'letters' %}
+            <li role="presentation"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
-  <div class="col-md-3 col-md-pull-9">
-    <ul class="nav nav-pills nav-stacked">
-      {% for page in site.pages %}
-      {% if page.title and page.categories contains 'letters' %}
-      <li role="presentation"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </div>  
 </div>
