@@ -1,6 +1,6 @@
 # Site settings
 title: phonics.io
-description: Learn phonics, and the basics of the English language.
+description: Improve your English by learning phonics.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://phonics.io" # the base hostname & protocol for your site
 permalink: "posts/:title"
