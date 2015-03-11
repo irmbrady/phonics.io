@@ -10,4 +10,7 @@ categories: [letters]
 markdown: kramdown
 
 sass:
-    style: :compressed
+  style: :compressed
+
+gems:
+-  jekyll-sitemap

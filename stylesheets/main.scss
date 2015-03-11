@@ -5,7 +5,7 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "bootstrap-custom-variables", // Custom variables must load after bootstrap.
+        "bootstrap-custom-variables", // Custom variables must load before bootstrap.
         "bootstrap"
 ;
 
@@ -327,7 +327,7 @@ a.list-group-item {
 
 // Footer CSS
 
-$footer-height: 150px;
+$footer-height: 300px;
 
 html {
   position: relative;
