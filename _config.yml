@@ -1,0 +1,16 @@
+# Site settings
+title: phonics.io
+description: Improve your English by learning phonics.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://phonics.io" # the base hostname & protocol for your site
+permalink: "posts/:title"
+categories: [letters]
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: :compressed
+
+gems:
+-  jekyll-sitemap
